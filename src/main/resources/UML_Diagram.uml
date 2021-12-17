@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>edu.rice.comp504.model.strategy.move.ChaseStrategy</OriginalElement>
+  <nodes>
+    <node x="996.0" y="847.0">edu.rice.comp504.model.strategy.move.RetreatStrategy</node>
+    <node x="745.0" y="434.0">edu.rice.comp504.model.object.character.Ghost</node>
+    <node x="1372.0" y="0.0">edu.rice.comp504.model.map.MapObject</node>
+    <node x="1660.0" y="847.0">edu.rice.comp504.model.strategy.move.NullStrategy</node>
+    <node x="664.0" y="847.0">edu.rice.comp504.model.strategy.move.ChaseStrategy</node>
+    <node x="398.0" y="445.0">edu.rice.comp504.model.object.character.Pacman</node>
+    <node x="1117.0" y="0.0">edu.rice.comp504.model.map.MapStore</node>
+    <node x="0.0" y="0.0">edu.rice.comp504.model.PacmanStore</node>
+    <node x="1328.0" y="847.0">edu.rice.comp504.model.strategy.PacmanStrategy</node>
+    <node x="511.99999999999994" y="1187.0">edu.rice.comp504.model.cmd.NullCharacterCmd</node>
+    <node x="332.0" y="847.0">edu.rice.comp504.model.strategy.move.RandomStrategy</node>
+    <node x="565.5" y="173.0">edu.rice.comp504.model.object.character.ACharacter</node>
+    <node x="0.0" y="1505.0">edu.rice.comp504.model.strategy.StrategyFactory</node>
+    <node x="0.0" y="1400.0">edu.rice.comp504.model.strategy.IStrategyFac</node>
+    <node x="554.0" y="1400.0">edu.rice.comp504.model.object.character.GhostStatus</node>
+    <node x="0.0" y="847.0">edu.rice.comp504.model.strategy.CollideStrategy</node>
+    <node x="281.99999999999994" y="1209.5">edu.rice.comp504.model.cmd.SwitchStratCmd</node>
+    <node x="280.0" y="1505.0">edu.rice.comp504.model.object.ObjectFac</node>
+    <node x="830.0" y="697.0">edu.rice.comp504.model.strategy.IUpdateStrategy</node>
+    <node x="826.0" y="1400.0">edu.rice.comp504.model.object.character.Direction</node>
+    <node x="1357.0" y="1060.0">edu.rice.comp504.model.Response</node>
+    <node x="280.0" y="1400.0">edu.rice.comp504.model.object.IObjectFac</node>
+    <node x="640.5" y="0.0">edu.rice.comp504.model.object.AObject</node>
+    <node x="397.24999999999994" y="1060.0">edu.rice.comp504.model.cmd.ICharacterCmd</node>
+    <node x="741.0" y="1165.5">edu.rice.comp504.model.cmd.UpdateStateCmd</node>
+    <node x="0.0" y="1165.0">edu.rice.comp504.model.cmd.EatenCmd</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="edu.rice.comp504.model.object.character.ACharacter" target="edu.rice.comp504.model.object.AObject" relationship="GENERALIZATION">
+      <point x="0.0" y="-105.5" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.cmd.SwitchStratCmd" target="edu.rice.comp504.model.cmd.ICharacterCmd" relationship="REALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="386.99999999999994" y="1140.0" />
+      <point x="501.74999999999994" y="1140.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.StrategyFactory" target="edu.rice.comp504.model.strategy.IStrategyFac" relationship="REALIZATION">
+      <point x="0.0" y="-61.5" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.object.character.Ghost" target="edu.rice.comp504.model.object.character.ACharacter" relationship="GENERALIZATION">
+      <point x="0.0" y="-105.5" />
+      <point x="908.5" y="409.0" />
+      <point x="735.0" y="409.0" />
+      <point x="0.0" y="105.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.CollideStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-84.0" />
+      <point x="156.0" y="822.0" />
+      <point x="986.0" y="822.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.PacmanStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-84.0" />
+      <point x="1484.0" y="822.0" />
+      <point x="986.0" y="822.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="edu.rice.comp504.model.object.ObjectFac" target="edu.rice.comp504.model.object.IObjectFac" relationship="REALIZATION">
+      <point x="0.0" y="-61.5" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.move.NullStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-84.0" />
+      <point x="1816.0" y="822.0" />
+      <point x="986.0" y="822.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.move.RandomStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-84.0" />
+      <point x="488.0" y="822.0" />
+      <point x="986.0" y="822.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="edu.rice.comp504.model.object.character.Pacman" target="edu.rice.comp504.model.object.character.ACharacter" relationship="GENERALIZATION">
+      <point x="0.0" y="-94.5" />
+      <point x="561.5" y="409.0" />
+      <point x="735.0" y="409.0" />
+      <point x="0.0" y="105.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.cmd.NullCharacterCmd" target="edu.rice.comp504.model.cmd.ICharacterCmd" relationship="REALIZATION">
+      <point x="0.0" y="-73.0" />
+      <point x="616.5" y="1140.0" />
+      <point x="501.74999999999994" y="1140.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.move.ChaseStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-84.0" />
+      <point x="820.0" y="822.0" />
+      <point x="986.0" y="822.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="edu.rice.comp504.model.strategy.move.RetreatStrategy" target="edu.rice.comp504.model.strategy.IUpdateStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-84.0" />
+      <point x="1152.0" y="822.0" />
+      <point x="986.0" y="822.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="edu.rice.comp504.model.cmd.UpdateStateCmd" target="edu.rice.comp504.model.cmd.ICharacterCmd" relationship="REALIZATION">
+      <point x="0.0" y="-94.5" />
+      <point x="1026.5" y="1140.0" />
+      <point x="501.74999999999994" y="1140.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.cmd.EatenCmd" target="edu.rice.comp504.model.cmd.ICharacterCmd" relationship="REALIZATION">
+      <point x="0.0" y="-95.0" />
+      <point x="131.0" y="1140.0" />
+      <point x="501.74999999999994" y="1140.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.38652912621359226" showDependencies="false" x="986.0" y="814.0" />
+  <SelectedNodes>
+    <node>edu.rice.comp504.model.strategy.move.ChaseStrategy</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
